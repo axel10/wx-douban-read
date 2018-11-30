@@ -1,0 +1,99 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx2f3b60b3f1706e2f",
+	"projectname": "douban",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": 0,
+					"name": "最受关注图书",
+					"pathName": "pages/mostHotBooks/mostHotBooks",
+					"query": "type=fiction"
+				},
+				{
+					"id": 1,
+					"name": "图书详情",
+					"pathName": "pages/detail/detail",
+					"query": "id=30336863"
+				},
+				{
+					"id": 2,
+					"name": "图书列表（按类型分类）",
+					"pathName": "pages/typeBookList/typeBookList",
+					"query": "type=fiction&label=小说"
+				},
+				{
+					"id": 3,
+					"name": "短评列表",
+					"pathName": "pages/commentList/commentList",
+					"query": "id=30336863&sort=hot"
+				},
+				{
+					"id": 4,
+					"name": "讨论",
+					"pathName": "pages/forum/forum",
+					"query": "id=30336863"
+				},
+				{
+					"id": 5,
+					"name": "讨论贴内容",
+					"pathName": "pages/topicContent/topicContent",
+					"query": "id=615839382"
+				},
+				{
+					"id": 6,
+					"name": "读书笔记详情",
+					"pathName": "pages/annotationContent/annotationContent",
+					"query": "id=65033612"
+				},
+				{
+					"id": -1,
+					"name": "图书详情",
+					"pathName": "pages/reviewContent/reviewContent",
+					"query": "id=9754852"
+				},
+				{
+					"id": 8,
+					"name": "书评列表",
+					"pathName": "pages/reviewList/reviewList",
+					"query": "id=30336863"
+				}
+			]
+		}
+	}
+}

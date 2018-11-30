@@ -1,0 +1,25 @@
+@import "../../var.scss";
+.header {
+  top: 0;
+  width: 100%;
+  height: $headerHeight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+  .logo {
+    font-size: 1.3rem;
+    color: #42bd56;
+    font-weight: bold;
+  }
+
+  .right {
+    display: flex;
+    font-size: .8rem;
+  }
+}

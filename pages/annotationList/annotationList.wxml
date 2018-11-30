@@ -1,0 +1,15 @@
+<g-header></g-header>
+<g-book-title data="{{meta}}"></g-book-title>
+
+<view class="main">
+  <view class="top">
+    读书笔记（{{meta.annotation_count}}）
+  </view>
+  <view class="content">
+    <g-annotation-item wx:for="{{annotations}}" wx:key="id" data="{{item}}"></g-annotation-item>
+  </view>
+</view>
+
+<g-footer></g-footer>
+
+<g-mask wx:if="{{loading}}"></g-mask>

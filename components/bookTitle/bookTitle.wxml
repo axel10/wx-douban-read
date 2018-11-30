@@ -1,0 +1,7 @@
+<view class="title" bindtap="toDetail">
+  <view class="cover">
+    <image mode="aspectFit" src="{{data.pic.normal}}"></image>
+  </view>
+  <text class="book-title">{{data.title}}</text>
+  <text class="rating">{{data.rating.value}}</text>
+</view>

@@ -1,0 +1,1 @@
+@import "../../var";.main{  padding:0 $padding*1.5;  width: 100%;  &>view{    width: 100%;  }  .top{    font-size: $fontsize;    color: #aaaaaa;    display: flex;    justify-content: space-between;    align-self: center;    height: 2rem;    border-bottom: 1px solid #eeeeee;  }  .content{  }}

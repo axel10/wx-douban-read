@@ -1,0 +1,23 @@
+/* components/bookListItem.wxss */
+.book-list-item {
+  width: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .book-list-item > image {
+    height: 8rem;
+    width: 100%;
+    display: block;
+    transition: opacity .3s;
+    opacity: 0; }
+    .book-list-item > image.show {
+      opacity: 1; }
+  .book-list-item .title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: .8rem; }
+
+/*# sourceMappingURL=bookListItem.wxss.map */

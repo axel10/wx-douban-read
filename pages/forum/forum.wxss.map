@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA;;;;;;;;;;;;;;;;;;GAkBG;AAEH,KAAK;EACH,OAAO,EAAC,QAAc;EACtB,KAAK,EAAE,IAAI;EACX,YAAM;IACJ,KAAK,EAAE,IAAI;EAGb,UAAI;IACF,SAAS,EC5BF,MAAK;ID6BZ,KAAK,EAAE,OAAO;IACd,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,aAAa;IAC9B,UAAU,EAAE,MAAM;IAClB,MAAM,EAAE,IAAI;IACZ,aAAa,EAAE,iBAAiB",
+"sources": ["forum.scss","../../var.scss"],
+"names": [],
+"file": "forum.wxss"
+}

@@ -1,0 +1,23 @@
+<view class="most-hot-books">
+    <g-header></g-header>
+    <view class="container">
+        <view class="top">
+            最受关注图书|{{title}}
+        </view>
+        <view class="book-items">
+            <view class="book-item" wx:for="{{books}}" wx:key="id">
+                <view class="img">
+                    <image data-index="{{index}}" class="{{item.show?'show':''}}" lazy-load="{{true}}" mode="aspectFill" src="{{item.cover.url}}" bindload="handleImgLoaded"></image>
+                </view>
+                <view class="right">
+                    <view class="title">
+                        {{item.title}}
+                    </view>
+                    <text class="card-subtitle">
+                        {{item.card_subtitle}}
+                    </text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

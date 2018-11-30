@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGE,uBAAM;EACJ,SAAS,EAAE,OAAa;EACxB,KAAK,ECDE,OAAO;ADGhB,yBAAQ;EACN,MAAM,EAAE,OAAO;EACf,YAAY,EAAE,KAAK;EACnB,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,iBAAoB;EACjC,SAAS,EAAE,OAAa;AAE1B,wBAAO;EACL,SAAS,EAAE,OAAa;EACxB,KAAK,EAAE,OAAO;EACd,aAAa,EAAE,KAAK",
+"sources": ["annotationItem.scss","../../var.scss"],
+"names": [],
+"file": "annotationItem.wxss"
+}

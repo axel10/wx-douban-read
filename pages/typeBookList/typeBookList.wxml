@@ -1,0 +1,20 @@
+<view>
+  <g-header></g-header>
+  <view class="container">
+    <view class="title">
+      {{label}}
+    </view>
+    <view class="books">
+      <book-list-item class="book-item" wx:for="{{books}}" wx:key="id" bindtap="toDetail" data-id="{{item.id}}"
+                      imgSrc="{{item.cover.url}}"
+                      title="{{item.title}}"
+                      isFadeIn="{{true}}"
+      >
+        <view class="stars">
+          <g-rating-stars class="rating-stars" value="{{isLoading?'1':'8'}}" max="10"></g-rating-stars>
+          <text>{{item.rating.value}}</text>
+        </view>
+      </book-list-item>
+    </view>
+  </view>
+</view>

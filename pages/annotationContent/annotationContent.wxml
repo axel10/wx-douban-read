@@ -1,0 +1,36 @@
+<g-header></g-header>
+<g-book-title data="{{meta}}"></g-book-title>
+<view class="main">
+  <view class="top">
+    {{data.chapter?data.chapter:data.title}}
+  </view>
+  <view class="author">
+    <view class="head">
+      <image mode="aspectFit" src="{{data.author.avatar}}"></image>
+    </view>
+    <view class="right">
+      <view class="name">{{data.author.name}}</view>
+      <view class="create-time">{{data.create_time}}</view>
+    </view>
+  </view>
+  <view class="content">{{data.abstract}}</view>
+  <view class="count">
+    <view class="block">
+      <view class="icon">
+        <image mode="aspectFit" src="https://img3.doubanio.com/f/talion/2e210d466e47d7fe89559a6db5cc5265bb441f70/pics/card/like.png"></image>
+      </view>
+      <view>{{data.reactions_count}}</view>
+    </view>
+    <view class="block">
+      <view class="icon">
+        <image mode="aspectFit" src="https://img3.doubanio.com/f/talion/c9b19d180e6af6cb70c1456cfc91cca37e8dc4d7/pics/card/comment.png"></image>
+      </view>
+      <view>{{data.comments_count}}</view>
+    </view>
+  </view>
+  <view class="bottom" bindtap="toAnnotationList">
+    {{meta.title}}的全部笔记
+  </view>
+</view>
+
+<g-footer></g-footer>

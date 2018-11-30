@@ -1,0 +1,33 @@
+<g-header></g-header>
+<g-book-title data="{{meta}}"></g-book-title>
+<view class="main">
+  <view class="top">
+    {{data.title}}
+  </view>
+  <view class="author">
+    <view class="head">
+      <image mode="aspectFit" src="{{data.user.avatar}}"></image>
+    </view>
+    <view class="right">
+      <view class="name">{{data.user.name}}</view>
+      <view class="bottom">
+        <view class="create-time">{{data.create_time}}</view>
+        <g-rating-stars max="5" value="{{data.rating.value}}"></g-rating-stars>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <rich-text nodes="{{data.content}}" type="text"></rich-text>
+  </view>
+  <view class="copyright">
+    本文版权归 {{data.user.name}} 所有，任何形式转载请联系作者
+  </view>
+  <view class="rating">
+    <view class="rating-btn-group">
+      <view class="left">{{data.useful_count}}有用</view>
+      <view class="right">{{data.useless_count}}没用</view>
+    </view>
+  </view>
+</view>
+
+<g-mask wx:if="{{loading}}"></g-mask>

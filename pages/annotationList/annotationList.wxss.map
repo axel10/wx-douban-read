@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,KAAK;EACH,OAAO,EAAC,QAAc;EACtB,KAAK,EAAE,IAAI;EACX,YAAM;IACJ,KAAK,EAAE,IAAI;EAGb,UAAI;IACF,SAAS,ECRF,MAAK;IDSZ,KAAK,EAAE,OAAO;IACd,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,aAAa;IAC9B,UAAU,EAAE,MAAM;IAClB,MAAM,EAAE,IAAI;IACZ,aAAa,EAAE,iBAAiB",
+"sources": ["annotationList.scss","../../var.scss"],
+"names": [],
+"file": "annotationList.wxss"
+}

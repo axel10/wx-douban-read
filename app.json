@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookList/bookList",
+    "pages/mostHotBooks/mostHotBooks",
+    "pages/detail/detail",
+    "pages/typeBookList/typeBookList",
+    "pages/commentList/commentList",
+    "pages/forum/forum",
+    "pages/topicContent/topicContent",
+    "pages/annotationContent/annotationContent",
+    "pages/annotationList/annotationList",
+    "pages/reviewContent/reviewContent",
+    "pages/reviewList/reviewList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "g-mask": "./components/common/mask/mask",
+    "g-header": "./components/header/header",
+    "g-rating-stars": "./components/ratingStars/ratingStars",
+    "book-list-item": "./components/index/bookListItem/bookListItem",
+    "g-comment-item": "./components/commentItem/commentItem",
+    "g-topic": "./components/topic/topic",
+    "g-footer": "./components/footer/footer",
+    "g-book-title": "components/bookTitle/bookTitle",
+    "g-review-item": "components/reviewItem/reviewItem",
+    "g-annotation-item": "components/annotationItem/annotationItem"
+  }
+}

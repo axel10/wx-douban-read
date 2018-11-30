@@ -1,0 +1,17 @@
+<g-header></g-header>
+
+<view class="main">
+
+  <g-book-title data="{{meta}}"></g-book-title>
+
+  <view class="top">
+    讨论（{{total}}）
+  </view>
+  <view class="content">
+    <g-topic wx:for="{{topics}}" wx:key="id" data="{{item}}"></g-topic>
+  </view>
+</view>
+
+<g-footer></g-footer>
+
+<g-mask wx:if="{{loading}}"></g-mask>

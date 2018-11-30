@@ -1,0 +1,6 @@
+<!--components/bookListItem.wxml-->
+<view class="book-list-item">
+    <image class="book-item-image {{isLoaded?'show':''}}"  src="{{imgSrc}}" mode="aspectFill" lazy-load="{{true}}" bindload="handleImgLoaded"></image>
+    <text class="title">{{title}}</text>
+    <slot></slot>
+</view>

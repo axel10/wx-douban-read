@@ -1,0 +1,105 @@
+<!--index.wxml-->
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+  <g-header></g-header>
+
+  <view class="content">
+    <view class="book-row">
+      <view class="row-top">
+        <text class="title">最受关注图书｜虚构类</text>
+        <text class="more" bindtap="toFiction">更多</text>
+      </view>
+
+      <view class="books">
+        <book-list-item wx:for="{{fictions}}" wx:key="id" class="test" id="test" bindtap="toDetail"
+                        data-id="{{item.id}}"
+                        imgSrc="{{item.cover.url}}"
+                        title="{{item.title}}"
+        >
+          <view class="stars">
+            <g-rating-stars class="rating-stars" value="{{isLoading?1:item.rating.value}}" max="10"></g-rating-stars>
+            <text>{{item.rating.value}}</text>
+          </view>
+        </book-list-item>
+      </view>
+    </view>
+    <view class="book-row">
+      <view class="row-top">
+        <text class="title">最受关注图书｜非虚构类</text>
+        <text class="more" bindtap="toNonFiction">更多</text>
+      </view>
+
+      <view class="books">
+        <book-list-item wx:for="{{nonfictions}}" wx:key="id"
+                        imgSrc="{{item.cover.url}}"
+                        title="{{item.title}}"
+        >
+          <view class="stars">
+            <g-rating-stars class="rating-stars" value="{{isLoading?1:item.rating.value}}" max="10"></g-rating-stars>
+            <text>{{item.rating.value}}</text>
+          </view>
+        </book-list-item>
+      </view>
+    </view>
+    <view class="book-store">
+      <view class="row-top">
+        <text class="title">豆瓣书店</text>
+        <text class="more">更多</text>
+      </view>
+
+      <view class="store-top">
+        <view class="img">
+          <image mode="aspectFill" src="{{storeHeader.cover.url}}"></image>
+        </view>
+        <view class="right">
+          <view class="right-top">
+            <view class="title">{{storeHeader.title}}</view>
+            <text class="price">￥{{storeHeader.price}}</text>
+          </view>
+          <text class="detail">
+            {{storeHeader.info}}
+          </text>
+        </view>
+      </view>
+      <view class="books">
+        <book-list-item wx:for="{{storeBooks}}" wx:key="id"
+                        imgSrc="{{item.cover.url}}"
+                        title="{{item.title}}"
+        >
+          <view class="price">
+            <text>￥{{item.price}}</text>
+          </view>
+        </book-list-item>
+      </view>
+    </view>
+
+    <view class="good-book">
+      <view class="row-top">
+        <text class="title">发现好图书</text>
+      </view>
+
+      <view class="wrap">
+        <view class="good-book-container">
+          <view class="good-book-item" wx:for="{{goodBooks}}" wx:key="id">
+            {{item.title}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="types">
+      <view class="row-top">
+        <text class="title">分类浏览</text>
+      </view>
+
+      <view class="type-items">
+        <view class="item" wx:for="{{types}}" wx:key="id" bindtap="toTypeList" data-key="{{item.key}}" data-label="{{item.title}}">
+          <text>{{item.title}}</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <g-footer></g-footer>
+</view>
+
+<g-mask tip="正在读取" wx:if="{{isLoading}}"></g-mask>

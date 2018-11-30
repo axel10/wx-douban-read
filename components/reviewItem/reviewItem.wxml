@@ -1,0 +1,17 @@
+<view class="review-item" bindtap="toContent">
+  <view class="title">
+    {{data.title}}
+  </view>
+  <view class="info">
+    <view class="author">
+      {{data.user.name}}
+    </view>
+    <g-rating-stars max="5" value="{{data.rating.value}}"></g-rating-stars>
+  </view>
+  <view class="content">
+    {{data.abstract}}
+  </view>
+  <view class="bottom">
+    {{data.likers_count}}有用
+  </view>
+</view>

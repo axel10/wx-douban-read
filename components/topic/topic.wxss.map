@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,MAAM;EACJ,OAAO,EAAE,OAAO;EAChB,aAAa,EAAE,iBAAiB;EAChC,SAAS,ECHA,MAAK;EDMd,gBAAS;IACP,KAAK,EAAE,OAAO",
+"sources": ["topic.scss","../../var.scss"],
+"names": [],
+"file": "topic.wxss"
+}

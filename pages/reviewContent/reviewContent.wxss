@@ -1,0 +1,55 @@
+.main {
+  padding: 0 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.8rem; }
+  .main > view {
+    width: 100%; }
+  .main .top {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #eeeeee;
+    margin: 1rem 0 .8rem; }
+  .main .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .main .author .head {
+      border-radius: 1rem;
+      overflow: hidden;
+      width: 2rem;
+      height: 2rem;
+      margin-right: .6rem; }
+      .main .author .head image {
+        width: 100%;
+        height: 100%; }
+    .main .author .right .bottom {
+      display: flex;
+      align-items: center; }
+      .main .author .right .bottom .create-time {
+        font-size: 0.64rem;
+        color: #999999;
+        margin-right: .5rem; }
+  .main .content {
+    font-size: 0.8rem; }
+  .main .copyright {
+    font-size: 0.72rem;
+    margin-top: 1rem;
+    color: #cccccc; }
+  .main .rating {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center; }
+    .main .rating .rating-btn-group > view {
+      padding: .5rem .9rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      display: inline-block; }
+      .main .rating .rating-btn-group > view.left {
+        border-radius: 1rem 0 0 1rem; }
+      .main .rating .rating-btn-group > view.right {
+        border-radius: 0 1rem 1rem 0;
+        border-left: 0; }
+
+/*# sourceMappingURL=reviewContent.wxss.map */

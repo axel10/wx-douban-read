@@ -1,0 +1,78 @@
+.main {
+  padding: 0 0.9rem;
+  width: 100%;
+  font-size: 0.8rem;
+  box-sizing: border-box; }
+  .main > view {
+    width: 100%; }
+  .main .top .title {
+    font-size: 1.2rem;
+    margin-bottom: .8rem; }
+  .main .top .info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem; }
+    .main .top .info .head {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 1rem; }
+      .main .top .info .head image {
+        width: 100%;
+        height: 100%; }
+    .main .top .info .create-time {
+      color: #aaaaaa; }
+  .main .top .content {
+    margin-top: 1rem; }
+  .main .tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.8rem; }
+    .main .tip .left {
+      font-size: 1rem;
+      font-weight: bold; }
+    .main .tip .see-lz {
+      border: 1px solid #cccccc;
+      padding: .3rem .5rem; }
+      .main .tip .see-lz.active {
+        background-color: #eeeeee;
+        color: #ffffff; }
+  .main .comments {
+    margin-top: 1rem; }
+    .main .comments .comment {
+      display: flex; }
+      .main .comments .comment .img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: .8rem; }
+        .main .comments .comment .img image {
+          width: 100%;
+          height: 100%; }
+      .main .comments .comment .right {
+        flex: 1; }
+        .main .comments .comment .right .right-top .username {
+          font-size: .9rem;
+          font-weight: bold; }
+        .main .comments .comment .right .right-top .create-time {
+          color: #aaaaaa; }
+        .main .comments .comment .right .content {
+          margin-top: .6rem; }
+        .main .comments .comment .right .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .main .comments .comment .right .bottom .good {
+            color: #cccccc; }
+            .main .comments .comment .right .bottom .good image {
+              display: inline-block; }
+            .main .comments .comment .right .bottom .good .good-icon {
+              width: 0.8rem;
+              height: 0.8rem; }
+          .main .comments .comment .right .bottom .more {
+            width: 1rem;
+            height: 1rem; }
+            .main .comments .comment .right .bottom .more image {
+              width: 100%;
+              height: 100%; }
+
+/*# sourceMappingURL=topicContent.wxss.map */

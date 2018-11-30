@@ -1,0 +1,23 @@
+<view class="interest ext">
+  <view class="img user-header">
+    <image mode="aspectFill" src="{{data.user.avatar}}"></image>
+  </view>
+  <view class="right">
+    <view class="right-top">
+      <view class="username">{{data.user.name}}</view>
+    </view>
+    <view class="time">{{data.timeDistance}}</view>
+    <view class="content">{{data.comment}}</view>
+    <view class="bottom">
+      <view class="good">
+        <image class="good-icon"
+               src="https://img3.doubanio.com/f/talion/7a0756b3b6e67b59ea88653bc0cfa14f61ff219d/pics/card/ic_like_gray.svg"></image>
+        <text class="count">{{data.vote_count}}</text>
+      </view>
+      <view class="more">
+        <image class="more-icon"
+               src="https://img3.doubanio.com/f/talion/be268c0a1adb577c8dfdcfbe48c818af3983ed62/pics/card/more.svg"></image>
+      </view>
+    </view>
+  </view>
+</view>

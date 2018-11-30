@@ -1,0 +1,36 @@
+.interest {
+  display: flex;
+  font-size: 0.8rem; }
+  .interest image {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .interest .img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .8rem; }
+    .interest .img image {
+      border-radius: 3rem; }
+  .interest .right {
+    flex: 1; }
+    .interest .right .right-top {
+      font-weight: bold; }
+    .interest .right .time {
+      color: #aaaaaa;
+      font-size: .6rem; }
+    .interest .right .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .interest .right .bottom .good {
+        color: #cccccc; }
+        .interest .right .bottom .good image {
+          display: inline-block; }
+        .interest .right .bottom .good .good-icon {
+          width: 0.8rem;
+          height: 0.8rem; }
+      .interest .right .bottom .more {
+        width: 1rem;
+        height: 1rem; }
+
+/*# sourceMappingURL=commentItem.wxss.map */

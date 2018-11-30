@@ -1,0 +1,14 @@
+.rating-stars {
+  display: flex;
+  width: 3.3rem;
+  height: .6rem; }
+  .rating-stars view {
+    width: .6rem;
+    height: .6rem;
+    display: block;
+    line-height: 0; }
+    .rating-stars view image {
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=ratingStars.wxss.map */

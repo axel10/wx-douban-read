@@ -1,0 +1,5 @@
+<view class="annotation-item" bindtap="toContent">
+  <view class="title">{{data.chapter?data.chapter:data.title}}</view>
+  <view class="content">{{data.abstract}}</view>
+  <view class="author">{{data.author.name}}</view>
+</view>

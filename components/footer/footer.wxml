@@ -1,0 +1,9 @@
+<view class="footer">
+  <view class="footer-logo">
+    <image
+      src="https://img3.doubanio.com/f/talion/7837f29dd7deab9416274ae374a59bc17b5f33c6/pics/card/douban-app-logo.png"
+      mode="aspectFill"></image>
+    <text>豆瓣</text>
+  </view>
+  <view class="tip">去App Store免费下载iOS客户端</view>
+</view>

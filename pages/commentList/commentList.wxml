@@ -1,0 +1,30 @@
+<g-header></g-header>
+
+<view class="main ">
+  <view class="top">全部短评({{total}})</view>
+  <view class="sort">
+    <text class="{{orderBy==='hot'?'current':''}}" data-sort="hot" bindtap="changeSort">热门短评</text>
+    <text> /</text>
+    <text data-sort="latest" bindtap="changeSort" class="{{orderBy==='latest'?'current':''}}">最新短评</text>
+  </view>
+  <view class="comment-container">
+    <g-comment-item ext="ext" wx:for="{{comments}}" data="{{item}}" wx:key="id">'</g-comment-item>
+  </view>
+
+  <view class="pager">
+    <view class="button" wx:if="{{pageNo!==1}}" bindtap="toPrevPage">
+      上一页
+    </view>
+    <view class="button disabled" wx:if="{{pageNo===1}}">
+      上一页
+    </view>
+    <view class="button" wx:if="{{pageSize*pageNo<total}}" bindtap="toNextPage">
+      下一页
+    </view>
+    <view class="button disabled" wx:if="{{pageSize*pageNo>=total}}">
+      下一页
+    </view>
+  </view>
+</view>
+
+<g-mask wx:if="{{loading}}"></g-mask>

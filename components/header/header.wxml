@@ -1,0 +1,8 @@
+<view class="header">
+    <view class="logo" bindtap="toHome">
+        豆瓣
+    </view>
+    <view class="right">
+        <view class="book">图书</view>
+    </view>
+</view>

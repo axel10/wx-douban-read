@@ -1,0 +1,8 @@
+.topic {
+  padding: .6rem 0;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.8rem; }
+  .topic .response {
+    color: #42bd56; }
+
+/*# sourceMappingURL=topic.wxss.map */

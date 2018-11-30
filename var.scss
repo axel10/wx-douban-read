@@ -1,0 +1,17 @@
+$padding: .6rem;
+$headerHeight: 2.5rem;
+$fontsize: .8rem;
+$smallFontSize:.7rem;
+$mainColor:#42bd56;
+
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fill{
+  width: 100%;
+  height: 100%;
+}

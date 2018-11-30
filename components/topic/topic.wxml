@@ -1,0 +1,4 @@
+<view class="topic ext">
+  <view class="title">{{data.title}}</view>
+  <view class="response">{{data.comments_count}}回应</view>
+</view>

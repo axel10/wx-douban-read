@@ -1,0 +1,23 @@
+/* pages/typeBookList/typeBookList.wxss */
+.container {
+  box-sizing: border-box;
+  padding: .8rem;
+  padding-top: 3.5rem; }
+  .container .title {
+    font-size: 1.2rem; }
+  .container .books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .container .books .book-item {
+      width: 5.5rem;
+      margin-bottom: 1rem; }
+      .container .books .book-item .stars {
+        font-size: .6rem;
+        height: 1rem;
+        display: flex; }
+        .container .books .book-item .stars .rating-stars {
+          display: block;
+          height: 1rem; }
+
+/*# sourceMappingURL=typeBookList.wxss.map */

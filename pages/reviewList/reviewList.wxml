@@ -1,0 +1,13 @@
+<g-header></g-header>
+<g-book-title data="{{meta}}"></g-book-title>
+<view class="main">
+
+  <view class="top">
+    全部书评（{{reviews.total}}）
+  </view>
+
+  <view class="content">
+    <g-review-item wx:for="{{reviews.reviews}}" wx:key="id" data="{{item}}"></g-review-item>
+  </view>
+</view>
+<g-mask wx:if="{{loading}}"></g-mask>

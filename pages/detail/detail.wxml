@@ -1,0 +1,96 @@
+<view class="main">
+  <g-header></g-header>
+  <view class="container">
+    <view class="title padding">
+      {{data.title}}
+    </view>
+    <view class="infos border-bottom padding">
+      <view class="left">
+        <view class="rating">
+          <g-rating-stars max="{{data.rating.max}}" value="{{data.rating.value}}"></g-rating-stars>
+          <text class="value">{{data.rating.value}}</text>
+          <text class="count">{{data.rating.count}}人评价</text>
+        </view>
+        <text class="meta">{{data.author[0]}} / {{data.press}} / {{data.pages[0]}}页 / 平装 / {{data.price[0]}} /
+          {{data.pubdate[0]}}
+        </text>
+      </view>
+      <view class="img">
+        <image mode="aspectFill" src="{{data.pic.normal}}"></image>
+      </view>
+    </view>
+    <view class="buy border-bottom padding">
+      <text>在豆瓣购买</text>
+      <text class="price">47.20元起</text>
+    </view>
+
+    <view class="channel padding">
+      <view class="row-title">所属频道</view>
+      <view class="channels">
+        <view class="item" wx:for="{{data.tags}}" wx:key="name">
+          {{item.name}}
+          <image class="arrow"
+                 src="https://img3.doubanio.com/f/talion/bfe0e094023e9382c7d5707219476c2713f2aa94/pics/card/green_arrow.png"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class="detail padding">
+      <view class="row-title">{{data.title}}的内容简介</view>
+      <view class="content {{isCollapseContent?'collapse':''}}" id="detailContent">
+        {{isCollapseContent?intro:data.intro}}
+        <text class="show-more" bindtap="expandIntro" wx:if="{{isCollapseContent}}">（展开）</text>
+      </view>
+    </view>
+
+    <view class="comment padding">
+      <view class="row-title">{{data.title}}的短评({{interests.count}})</view>
+      <view class="interests">
+        <g-comment-item wx:for="{{interests}}" wx:key="id" data="{{item}}"></g-comment-item>
+        <view class="view-more" bindtap="toInterests">
+          查看全部短评
+        </view>
+      </view>
+    </view>
+
+    <view class="forum-topics padding">
+      <view class="row-title">
+        {{data.title}}的讨论({{forumTopics.count}})
+      </view>
+
+      <view class="topics">
+        <g-topic wx:for="{{forumTopics}}" wx:key="id" data="{{item}}"></g-topic>
+      </view>
+      <view class="view-more" bindtap="toForum">
+        查看全部讨论
+      </view>
+    </view>
+
+    <view class="annotations padding">
+      <view class="row-title">
+        {{data.title}}的读书笔记({{forumTopics.count}})
+      </view>
+      <view class="topics">
+        <g-annotation-item wx:for="{{annotations}}" wx:key="id" data="{{item}}"></g-annotation-item>
+      </view>
+      <view class="view-more" bindtap="toAnnotationList">
+        查看全部读书笔记
+      </view>
+    </view>
+
+    <view class="reviews padding">
+      <view class="row-title">
+        {{data.title}}的书评({{forumTopics.count}})
+      </view>
+      <view class="topics">
+        <g-review-item wx:for="{{reviews}}" wx:key="id" data="{{item}}"></g-review-item>
+      </view>
+      <view class="view-more" bindtap="toReviewList">
+        查看全部书评
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<g-mask tip="正在读取" wx:if="{{isLoading}}"></g-mask>
