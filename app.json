@@ -11,7 +11,8 @@
     "pages/annotationContent/annotationContent",
     "pages/annotationList/annotationList",
     "pages/reviewContent/reviewContent",
-    "pages/reviewList/reviewList"
+    "pages/reviewList/reviewList",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

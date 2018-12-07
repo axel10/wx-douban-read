@@ -24,7 +24,6 @@ Page({
    */
   onLoad(options) {
     const { type, label } = options;
-    console.log(options);
     bookService.getBooksByType(type).then((o) => {
       this.setData({ books: o.subject_collection_items, label, isLoading: false });
     });

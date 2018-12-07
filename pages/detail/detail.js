@@ -60,7 +60,6 @@ Page({
         const query = wx.createSelectorQuery();
         query.select('#detailContent').boundingClientRect();
         query.exec((res) => {
-          console.log(res);
           const fontCount = 23 * 3 - 3;
           const intro = o.intro.substring(0, fontCount);
           // debugger
@@ -70,22 +69,22 @@ Page({
     });
     // 获取讨论
     bookService.getForumTopics(id).then((o) => {
-      this.setData({ forumTopics: o.forum_topics });
+      this.setData({ forumTopics: o });
     });
     // 获取短评
     bookService.getInterests(id).then((o) => {
       o.interests.forEach((item) => {
         item.timeDistance = getTimeDistanceString(item.create_time);
       });
-      this.setData({ interests: o.interests });
+      this.setData({ interests: o });
     });
     // 获取读书笔记
     bookService.getAnnotations(id).then((o) => {
-      this.setData({ annotations: o.annotations });
+      this.setData({ annotations: o });
     });
     // 获取书评
     bookService.getReviews(id).then((o) => {
-      this.setData({ reviews: o.reviews });
+      this.setData({ reviews: o });
     });
   },
 

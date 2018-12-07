@@ -18,13 +18,11 @@ Page({
 
   changeSort(e) {
     const { sort: orderBy } = e.currentTarget.dataset;
-    console.log(orderBy);
     this.setData({ orderBy });
     this.getComments();
   },
 
   toNextPage(e) {
-    console.log(e.currentTarget);
     this.setData({ pageNo: this.data.pageNo + 1 });
     this.getComments();
   },

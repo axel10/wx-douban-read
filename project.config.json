@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": 0,
@@ -92,6 +92,12 @@
 					"name": "书评列表",
 					"pathName": "pages/reviewList/reviewList",
 					"query": "id=30336863"
+				},
+				{
+					"id": -1,
+					"name": "书评列表",
+					"pathName": "pages/search/search",
+					"query": "query=回答"
 				}
 			]
 		}

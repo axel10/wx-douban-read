@@ -62,12 +62,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    wx.createSelectorQuery().select('.books >>> .title').boundingClientRect().exec((ret) => {
-      console.log(ret);
-    });
-    wx.createSelectorQuery().select('.books').boundingClientRect().exec((ret) => {
-      console.log(ret);
-    });
+
   },
 
   /**

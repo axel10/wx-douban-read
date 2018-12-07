@@ -44,9 +44,9 @@
     </view>
 
     <view class="comment padding">
-      <view class="row-title">{{data.title}}的短评({{interests.count}})</view>
+      <view class="row-title">{{data.title}}的短评({{interests.total}})</view>
       <view class="interests">
-        <g-comment-item wx:for="{{interests}}" wx:key="id" data="{{item}}"></g-comment-item>
+        <g-comment-item wx:for="{{interests.interests}}" wx:key="id" data="{{item}}"></g-comment-item>
         <view class="view-more" bindtap="toInterests">
           查看全部短评
         </view>
@@ -55,11 +55,11 @@
 
     <view class="forum-topics padding">
       <view class="row-title">
-        {{data.title}}的讨论({{forumTopics.count}})
+        {{data.title}}的讨论({{forumTopics.total}})
       </view>
 
       <view class="topics">
-        <g-topic wx:for="{{forumTopics}}" wx:key="id" data="{{item}}"></g-topic>
+        <g-topic wx:for="{{forumTopics.forum_topics}}" wx:key="id" data="{{item}}"></g-topic>
       </view>
       <view class="view-more" bindtap="toForum">
         查看全部讨论
@@ -68,10 +68,10 @@
 
     <view class="annotations padding">
       <view class="row-title">
-        {{data.title}}的读书笔记({{forumTopics.count}})
+        {{data.title}}的读书笔记({{annotations.total}})
       </view>
       <view class="topics">
-        <g-annotation-item wx:for="{{annotations}}" wx:key="id" data="{{item}}"></g-annotation-item>
+        <g-annotation-item wx:for="{{annotations.annotations}}" wx:key="id" data="{{item}}"></g-annotation-item>
       </view>
       <view class="view-more" bindtap="toAnnotationList">
         查看全部读书笔记
@@ -80,10 +80,10 @@
 
     <view class="reviews padding">
       <view class="row-title">
-        {{data.title}}的书评({{forumTopics.count}})
+        {{data.title}}的书评({{reviews.total}})
       </view>
       <view class="topics">
-        <g-review-item wx:for="{{reviews}}" wx:key="id" data="{{item}}"></g-review-item>
+        <g-review-item wx:for="{{reviews.reviews}}" wx:key="id" data="{{item}}"></g-review-item>
       </view>
       <view class="view-more" bindtap="toReviewList">
         查看全部书评

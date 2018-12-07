@@ -1,4 +1,5 @@
 import request from '../utils/request';
+import { baseApiUrl } from '../utils/config';
 
 export default {
   getBookFiction() {
@@ -10,8 +11,10 @@ export default {
   getStoreBook() {
     return request.get('/subject_collection/market_product_book_mobile_web/items');
   },
-  search(q) {
-    return request.get(`https://douban.uieee.com/v2/book/search?q=${q}`);
+  search(q, start = 0, count = 10) {
+    return request.get(`${baseApiUrl}/book/search`, {
+      q, start, count,
+    });
   },
   getBookDetail(id) {
     return request.get(`/book/${id}`);
